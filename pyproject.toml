@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-check-locator"
+version = "0.1.0"
+description = "Read-only Section/Exercise locator CLI for CVAA2E and DIP4E JSON catalogs"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+book-locator = "pdf_check.cli:main"
+
+[tool.setuptools]
+packages = ["pdf_check"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+pdf_check = ["catalog/*/*.json"]
