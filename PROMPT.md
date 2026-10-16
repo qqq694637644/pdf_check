@@ -20,7 +20,7 @@
 
 **定位由 MCP 的 PowerShell 执行器调用已安装的只读 Python CLI 完成；原始 PDF 的读取与视觉核验由 ChatGPT Project 完成。** 不需要单独的 Section/Exercise MCP 工具，也不需要 MCP 存储或传输 PDF。
 
-`pdf_check` 仓库已经提供 Python 3.13 全局命令 **`book-locator`**。实际命令如下（这是当前项目的真实接口，不是旧项目的 `gptGetSectionLocator`，也不是不存在的 `python -m scripts.query_locator`）：
+`pdf_check` 仓库已经提供 Python 3.13 全局命令 **`book-locator`**。实际命令如下：
 
 ```powershell
 book-locator --book cvaa2e section 2.1.1
